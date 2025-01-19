@@ -37,11 +37,20 @@ export const Form = ({onFresh,editdata}) => {
   return (
     <div>
     <Toaster richColors position="top-center"  />
+     <h1 className='text-center mt-5 mb-3'>Task Manager</h1>
+    <div className="container d-flex flex-row justify-content-center mb-5 mt-3">
+      <div className="row">
+        <div className="col-md-12">
       <form onSubmit={handleSubmit}>
-        <input type="text" name="" value={name} onChange={(e)=>setName(e.target.value)} id="" />
-        <input type="text" name=""  value={age}  onChange={(e)=>setAge(e.target.value)} id="" />
-        <input type="submit" value="submit" />
+        <input type="text" name="" className="table form-control"  value={name} onChange={(e)=>setName(e.target.value)} id="" />
+        <input type="text" name=""  className="table form-control" value={age}  onChange={(e)=>setAge(e.target.value)} id="" />
+       <div className="d-flex justify-content-center">
+       <input type="submit" value="submit" className="btn btn-primary" />
+       </div>
       </form>
+      </div>
+      </div>
+      </div>
     </div>
   );
 };
