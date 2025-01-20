@@ -46,8 +46,8 @@ function handleEdit(datas){
             <h5 className='text-center'>{dd.name}</h5>
             <p className='text-center'>{dd.age}</p>
             <div className='d-flex gap-3 mb-2 justify-content-center'>
-            <button className='btn btn-success' onClick={()=>handleDelete(dd._id)}>delete</button>
-            <button className='btn btn-danger' onClick={()=>handleEdit(dd)}>Edit</button>
+            <button className='btn btn-success' onClick={()=>handleEdit(dd)}>Edit</button>
+            <button className='btn btn-danger' onClick={()=>handleDelete(dd._id)}>delete</button>
             </div>
             </div>
           </div> 
