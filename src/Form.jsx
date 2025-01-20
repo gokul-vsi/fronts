@@ -42,8 +42,8 @@ export const Form = ({onFresh,editdata}) => {
       <div className="row">
         <div className="col-md-12">
       <form onSubmit={handleSubmit}>
-        <input type="text" name="" className="table form-control"  value={name} onChange={(e)=>setName(e.target.value)} id="" />
-        <input type="text" name=""  className="table form-control" value={age}  onChange={(e)=>setAge(e.target.value)} id="" />
+        <input type="text" name="" className="table form-control" placeholder="Enter your role"  value={name} onChange={(e)=>setName(e.target.value)} id="" />
+        <input type="text" name=""  className="table form-control" placeholder="Enter your Today Task" value={age}  onChange={(e)=>setAge(e.target.value)} id="" />
        <div className="d-flex justify-content-center">
        <input type="submit" value="submit" className="btn btn-primary" />
        </div>
